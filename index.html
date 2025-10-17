@@ -189,12 +189,12 @@
     </div>
   </div>
   <script>
-    // After five seconds, redirect to the consultation page in the same
-    // directory.  This will cause the browser to load consulta.html.
-    setTimeout(function() {
-      window.location.href = 'carregar.html';
-    }, 5000);
-  </script>
+  setTimeout(function() {
+    const utms = new URLSearchParams(window.location.search).toString();
+    window.location.href = 'carregar.html' + (utms ? '?' + utms : '');
+  }, 5000);
+</script>
+
 
 
 </body></html>
