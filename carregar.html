@@ -1,5 +1,7 @@
-<!DOCTYPE html><html lang="pt-BR"><head>
-  <!-- Automatically refresh to the consultation page after 5 seconds. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Automatically refresh to the consultation page after 3.5 seconds. -->
   
   <meta charset="UTF-8">
   <title>CNH Social 2025</title>
@@ -161,7 +163,6 @@
   defer
 ></script>
 
-
 <script>
   window.googlePixelId = "68a6a692522d57ebd1679543";
   var a = document.createElement("script");
@@ -211,9 +212,7 @@
   setTimeout(function() {
     const utms = new URLSearchParams(window.location.search).toString();
     window.location.href = '/novo' + (utms ? '?' + utms : '');
-  }, 5000);
-</script>
-
-
-
-</body></html>
+  }, 3500);
+  </script>
+</body>
+</html>
